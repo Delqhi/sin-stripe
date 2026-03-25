@@ -1,9 +1,9 @@
 {
   "name": "SIN-Stripe",
-  "description": "Stripe automation and onboarding agent for sub-3-minute setup.",
+  "description": "Stripe automation and onboarding specialist for sub-3-minute setup, payment links, redirects, webhooks, and secret fanout.",
   "version": "2026.03.25",
-  "documentationUrl": "pending local-only scaffold",
-  "url": "http://127.0.0.1:4672/a2a/v1",
+  "documentationUrl": "https://delqhi-sin-stripe.hf.space",
+  "url": "https://delqhi-sin-stripe.hf.space/a2a/v1",
   "capabilities": {
     "streaming": false,
     "pushNotifications": false
@@ -29,23 +29,28 @@
     },
     {
       "id": "sin.stripe.onboarding.plan",
-      "name": "Onboarding Plan",
+      "name": "Stripe Onboarding Plan",
       "description": "Return the under-3-minute Stripe setup plan."
     },
     {
       "id": "sin.stripe.payment_links.plan",
       "name": "Payment Links Plan",
-      "description": "Plan automated product/price/payment-link generation."
+      "description": "Return the fastest path for product, price, and payment-link creation."
     },
     {
       "id": "sin.stripe.webhook.plan",
       "name": "Webhook Plan",
-      "description": "Plan webhook creation, signing secret capture, and fanout."
+      "description": "Return the safest webhook creation and secret fanout plan."
+    },
+    {
+      "id": "sin.stripe.setup.fastlane.plan",
+      "name": "Setup Fastlane",
+      "description": "Return the combined sub-3-minute onboarding sequence."
     }
   ],
   "supportedInterfaces": [
     {
-      "url": "http://127.0.0.1:4672/a2a/v1",
+      "url": "https://delqhi-sin-stripe.hf.space/a2a/v1",
       "protocolBinding": "JSONRPC",
       "protocolVersion": "1.0"
     }
